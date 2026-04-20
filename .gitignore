@@ -1,0 +1,26 @@
+# Local FreeCAD files (large binaries, not committed)
+local/
+
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+*.FCStd
+*.FCBak
+
+# Virtual environments
+.venv
+
+# Dependencies
+node_modules/
+
+# Build output
+.output/
+.vinxi/
+
+# Env
+.env
+.env.local
