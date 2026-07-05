@@ -50,12 +50,14 @@ handles phrases like "a bookshelf 800mm wide, 2m tall with 4 shelves", "no doors
 ## Deployment (free, GitHub Pages)
 
 Every push to `master` runs `.github/workflows/deploy-pages.yml`: unit tests, a static
-SPA build (`PAGES_BASE=/<repo>/ npm run build`), and a deploy to GitHub Pages. On static
-hosting there is no server, so the chat always uses the built-in parser — the cut list,
-3D preview, instructions and DXF/ZIP export are all client-side and fully functional.
+SPA build (`PAGES_BASE=/<repo>/ npm run build`), and a publish of `dist/client` to the
+`gh-pages` branch. On static hosting there is no server, so the chat always uses the
+built-in parser — the cut list, 3D preview, instructions and DXF/ZIP export are all
+client-side and fully functional.
 
-One-time setup if the first run can't enable Pages itself: repo **Settings → Pages →
-Source: GitHub Actions**, then re-run the workflow.
+One-time setup (GitHub only lets repo admins do this): **Settings → Pages → Source:
+Deploy from a branch → `gh-pages` / `/ (root)`**. After that the site is live at
+`https://<owner>.github.io/cutmy-ai-demo/` and every deploy is automatic.
 
 ## Stack
 
