@@ -24,3 +24,10 @@ node_modules/
 # Env
 .env
 .env.local
+
+# humanlayer thoughts (synced to a separate thoughts repo, never committed here)
+thoughts/
+
+# Vite/TanStack Start build output
+dist/
+.tanstack/
